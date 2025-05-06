@@ -7,5 +7,7 @@ public class Main {
         boolean student = true;
 
         GenericMethods.printArguments(person, message, student, 1.80F);
+        GenericMethods.printArgumentsUnsafe(person, message, student, 1.80F);
+
     }
 }

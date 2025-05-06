@@ -2,8 +2,14 @@ package Exercise2;
 
 public class GenericMethods {
     @SafeVarargs
-    public static <Type> void printArguments(Type... args) {
-        for (Type arg : args) {
+    public static <T> void printArguments(T... args) {
+        for (T arg : args) {
+            System.out.println(arg);
+        }
+    }
+
+    public static <T> void printArgumentsUnsafe(T... args) {
+        for (T arg : args) {
             System.out.println(arg);
         }
     }
